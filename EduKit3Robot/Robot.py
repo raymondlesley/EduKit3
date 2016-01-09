@@ -106,3 +106,59 @@ class Robot:
 	def Forwards(self):
 		self._right_fwd()
 		self._left_fwd()
+
+	# #################################
+	# FwdRight
+	# move forwards and to the right
+	#
+	def FwdRight(self):
+		self._right_stop()
+		self._left_fwd()
+
+	# #################################
+	# FwdLeft
+	# move forwards and to the left
+	#
+	def FwdLeft(self):
+		self._right_fwd()
+		self._left_stop()
+
+	# #################################
+	# SpinRight
+	# spin clockwise
+	#
+	def SpinRight(self):
+		self._right_back()
+		self._left_fwd()
+
+	# #################################
+	# SpinLeft
+	# spin anticlockwise
+	#
+	def SpinLeft(self):
+		self._right_fwd()
+		self._left_back()
+
+	# #################################
+	# BackRight
+	# move backwards and to the right
+	#
+	def BackRight(self):
+		self._right_stop()
+		self._left_back()
+
+	# #################################
+	# BackLeft
+	# move backwards and to the left
+	#
+	def BackLeft(self):
+		self._right_back()
+		self._left_stop()
+
+	# #################################
+	# Backwards
+	# move backwards
+	#
+	def Backwards(self):
+		self._right_back()
+		self._left_back()
